@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-image: url("https://media.rawg.io/media/games/6df/6df25df71825f338195c69cd7ae07b85.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-bottom: 35px;
+  color: black;
+  padding: 20px;
+  border-radius: 13px;
+  background-image: url("https://images.alphacoders.com/877/thumb-1920-877952.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: bottom left;
+  
+}
+
+.fadeEffect {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 100px, rgba(255,255,255,1) 100%);
+  z-index: 0;
+  position:absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.title {
+  text-align: left;
+  font-size: 27px;
+  color: #25488e;
+  text-decoration: underline;
+  z-index: 2;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 17px;
+  z-index: 2;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.type {
+  font-size: 17px;
+  z-index: 2;
+  font-weight: bold;
+  color: white;
+  padding:0.3em;
+  border-radius: 20px;
+}
+
+.text {
+  font-size: 20px;
+  text-align: left;
+  z-index: 2;
+}
+
+.thumbnail{
+  align-self: left;
+  z-index: 2;
+  height: 100%;
+}
+
+.thumbnail > a > img {
+  max-height: 300px;
+}
+
+.logo > img {
+  min-width: 300px;
+  max-height: 200px;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: bold;
+  z-index: 2;
+  padding: 10px;
+  background-color:white;
+  border-radius: 30px;
+  width: 160px;
+  border: none;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+}
+
+.media {
+  z-index: 2;
+}
+
+.comments {
+  z-index: 2;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+  margin-top: 20px;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.commentText {
+  z-index: 2;
+  text-align: start;
+  font-size: 15px;
+
+}
